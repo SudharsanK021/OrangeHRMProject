@@ -1,0 +1,93 @@
+Login Xpaths
+Link-https://opensource-demo.orangehrmlive.com/
+//h5
+input[name='username']
+input[name='password']
+button[type='submit']
+//p[normalize-space()='Forgot your password?']
+
+Invalid
+//p[text()='Invalid credentials']
+
+
+Home Page Assertion
+//img[@alt='client brand banner']
+//header//*[text()='Dashboard']
+
+Paul Collings = p.oxd-userdropdown-name
+
+Leaves Workflow
+
+//span[text()='Leave']
+//*[text()='Apply']
+//*[text()='Assign Leave']
+
+
+aSSIGN lEAVES
+
+'Paul  Collings' - name
+ 
+ 
+ Leave Type - 
+ //*[text()='-- Select --']
+ //*[text()='CAN - Bereavement']
+ 
+ FromDate - //*[text()='From Date']//following::input[1]
+ ToDate - //*[text()='To Date']//following::input[1]
+ 
+ Comments - //*[text()='Comments']//following::textarea[1]
+ 
+ 
+ Validate Required Fields
+ Color Code - 'eb0910'
+ Leave Type
+ From Date
+ To Date
+ (//*[text()='Required'])[3]
+ 
+ //*[text()='Confirm Leave Assignment']
+//*[text()='Employee does not have sufficient leave balance for leave request. Click OK to confirm leave assignment.']
+//*[text()=' Ok ']
+ 
+ 
+ 
+ Leave Balance
+ Retreive Leave Balance - //*[text()='Leave Balance']//following::p[1]
+ 
+
+Assign Btn - //*[text()=' Assign ']
+
+
+
+Generate Leave Report of an Employee
+//div[@class='oxd-topbar-body']//*[normalize-space()='Reports']
+//*[normalize-space()='Leave Entitlements and Usage Report']
+
+//*[text()='Employee']
+//*[text()='Employee Name']//following::input[1]
+//*[text()='Leave Period']//following::i[1]
+//*[text()=' Generate ']
+
+Get Column Count = //div[@class='oxd-report-table-header']//span[1]
+
+
+ColumnCountHeader = //div[@class="rgHeaderCell"] --> Used to retreieve Header Data
+
+rowValue = //div[contains(@class,'rgCell')]
+{First Column Horizontal}
+{Second Column Vertical}
+
+
+Workflows Ideas
+
+Submit Leaves
+Review Leaves
+Approve / Reject Leaves
+Add Comments
+
+Submit Timesheet
+Review Timesheet
+
+Time > Attendance > Punch In or Punch Out
+
+Retreive Total Attendance

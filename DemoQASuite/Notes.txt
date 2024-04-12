@@ -1,0 +1,84 @@
+ID
+userEmail
+label - "Male","Female","Other"
+userNumber
+dateOfBirthInput
+uploadPicture
+currentAddress
+
+Class - subjects-auto-complete__input
+
+Label - "Sports","Reading","Music"
+
+(//div[@class=" css-tlfecz-indicatorContainer"])[1]
+(//div[@class=" css-tlfecz-indicatorContainer"])[2]
+
+By Linktext
+Submit
+
+CSS Selectors
+
+	Used to identify an Webelement by combining the Selector type and its Value
+	Its faster when Compared to Xpath
+
+Using
+ID
+Class
+HREF
+
+
+ID  > "#"
+
+Syntax:
+	tagname#idValue
+
+Class > '.'
+
+Syntax 
+	tagname.classValue
+
+HREF
+
+syntax	tagname[href="value"]
+
+
+
+Precedence
+ID > Class > HREF
+
+Combinations/Consildated
+tagname.id#class[href]
+
+
+SubStrings
+
+Prefix
+<tagname>[<attribute>^=’substring’]
+
+Suffix
+<tagname>[<attribute>$=’substring’]
+
+Contains
+<tagname>[<attribute>*=’substring’]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

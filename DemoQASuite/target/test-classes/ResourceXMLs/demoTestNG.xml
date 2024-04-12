@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ <test name="SuccessfulLogin"  enabled="false">
+  	<parameter name="loginUserName" value="Admin"/>
+  	<parameter name="loginPassword" value="admin123"/>
+    <classes>
+      <class name="OrangeHRMQA.ReusableComponent">
+      		<methods>
+      			<include name="login" />
+      			<include name="dashboardAssertionUponLogin" />
+      		</methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  <test name="InvalidLogin"  enabled="false">
+  	<parameter name="loginUserName" value="Admin"/>
+  	<parameter name="loginPassword" value="admin"/>
+    <classes>
+      <class name="OrangeHRMQA.ReusableComponent">
+      		<methods>
+      			<include name="invalidLogin" />
+      		</methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  <test name="AssignLeaves" enabled="false">
+  	<parameter name="loginUserName" value="Admin"/>
+  	<parameter name="loginPassword" value="admin123"/>
+  	<parameter name="UserName" value="Odis  Adalwin"/>
+    <classes>
+      <class name="OrangeHRMQA.ReusableComponent">
+      		<methods>
+      			<include name="login" />
+      			<include name="dashboardAssertionUponLogin" />
+      			<include name="navigateToLeavesScreen" />
+      			<include name="assignLeavesToUser" />
+      		</methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+   <test name="GenerateEmployeeLeaveReport"  enabled="false">
+    <parameter name="loginUserName" value="Admin"/>
+  	<parameter name="loginPassword" value="admin123"/>
+  	<parameter name="UserName" value="Odis  Adalwin"/>
+    <classes>
+      <class name="OrangeHRMQA.ReusableComponent">
+      		<methods>
+      			<include name="login" />
+      			<include name="dashboardAssertionUponLogin" />
+      			<include name="navigateToLeavesScreen" />
+      			<include name="generateEmployeeLeaveReport" />
+      		</methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  <test name="GenerateMyLeaveReport"  enabled="true">
+    <parameter name="loginUserName" value="Admin"/>
+  	<parameter name="loginPassword" value="admin123"/>
+  	<parameter name="UserName" value="Odis  Adalwin"/>
+    <classes>
+      <class name="OrangeHRMQA.ReusableComponent">
+      		<methods>
+      			<include name="login" />
+      			<include name="dashboardAssertionUponLogin" />
+      			<include name="navigateToLeavesScreen" />
+      			<include name="generateMyLeaveReport" />
+      		</methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GenerateMyLeaveReport(failed)">
+    <parameter name="loginUserName" value="Admin"/>
+    <parameter name="UserName" value="Odis  Adalwin"/>
+    <parameter name="loginPassword" value="admin123"/>
+    <classes>
+      <class name="OrangeHRMQA.ReusableComponent">
+        <methods>
+          <include name="browserInitialization"/>
+          <include name="generateMyLeaveReport"/>
+          <include name="browserTearDown"/>
+        </methods>
+      </class> <!-- OrangeHRMQA.ReusableComponent -->
+    </classes>
+  </test> <!-- GenerateMyLeaveReport(failed) -->
+</suite> <!-- Failed suite [Suite] -->
